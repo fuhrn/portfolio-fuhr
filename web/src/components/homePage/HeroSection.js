@@ -11,7 +11,7 @@ function HeroSection() {
       <div className="container">
         <div className="hero__wrapper">
           <div className="left">
-            <h1 className="hero__heading">Explore the world with Technology</h1>
+            <h1 className="hero__heading">Portfolio Néstor Santiago Fuhr</h1>
             <ParagraphText className="hero__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem
               ipsum dolor sit amet consectetur adipisicing elit

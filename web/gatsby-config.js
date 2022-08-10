@@ -4,7 +4,7 @@ const sanityConfig = require('./sanity-config.js');
 module.exports = {
   siteMetadata: {
     title: `Portfolio Fuhr-blog`,
-    siteUrl: `https://portfolio-fuhr.netlify.com`,
+    siteUrl: `https://portfolio-fuhr.vercel.app/`,
     description: `Portfolio Blog is my site where I show my projects and publish my articles.`,
   },
   plugins: [
