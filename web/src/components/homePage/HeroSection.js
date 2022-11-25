@@ -11,19 +11,20 @@ function HeroSection() {
       <div className="container">
         <div className="hero__wrapper">
           <div className="left">
-            <h1 className="hero__heading">Portfolio Néstor Santiago Fuhr II</h1>
+            <h1 className="hero__heading">Portfolio Néstor Santiago Fuhr</h1>
             <ParagraphText className="hero__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem
-              ipsum dolor sit amet consectetur adipisicing elit
+              Hola, soy Néstor Santiago Fuhr, software engineer, con
+              especialidad en React, Node.Js, Express.js, PostreSQL, y MongoDB, 
+              entre otras herramientas.
             </ParagraphText>
             <Button to="/blogs" tag={Link} className="hero__button">
-              Explore Blogs
+              Mis proyectos
             </Button>
           </div>
           <div className="right">
             <StaticImage
               className="hero__image"
-              src="../../images/vr-guy.jpg"
+              src="../../images/projects.jpg"
               alt="vr guy"
               placeholder="blurred"
               objectPosition="50% 30%"
