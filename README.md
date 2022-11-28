@@ -6,3 +6,5 @@ Aplicación desarrollada con Gatsby.js para el front-end y Sanity.io (headless C
 
 This project is a fork from https://github.com/ShaifArfan/techHub-blog
 
+Aplicación deployada en: https://portfolio-fuhr.vercel.app/
+
