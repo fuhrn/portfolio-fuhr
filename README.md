@@ -1,10 +1,8 @@
-![techhub-blog](./banner.png)
+![Alt text](web/src/images/nefPortfolio.jpg)
 
 # Portfolio-Fuhr-Blog
 
-A complete blog website created with `JAMstack`. ([Gatsby.js](https://www.gatsbyjs.org/) & [Sanity.io](https://sanity.io)).
-
-**Live Preview: [http://techhub-blog.vercel.app/][preview]**
+Aplicación desarrollada con Gatsby.js para el front-end y Sanity.io (headless CMS) para almacenar el blog en el back-end. Esta aplicación la uso como un blog de los proyectos que he realizado y deployado.
 
 This project is a fork from https://github.com/ShaifArfan/techHub-blog
 
