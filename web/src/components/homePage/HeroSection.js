@@ -14,8 +14,9 @@ function HeroSection() {
             <h1 className="hero__heading">Portfolio Néstor Santiago Fuhr</h1>
             <ParagraphText className="hero__text">
               Hola, soy Néstor Santiago Fuhr, software engineer, con
-              especialidad en React, Node.Js, Express.js, PostreSQL, y MongoDB, 
-              entre otras herramientas.
+              especialidad en React, Node.Js, Express.js, PostreSQL, y MongoDB,
+              entre otras herramientas. Vivo en Don Torcuato, partido de Tigre,
+              provincia de Buenos Aires, Argentina.
             </ParagraphText>
             <Button to="/blogs" tag={Link} className="hero__button">
               Mis proyectos
@@ -24,8 +25,8 @@ function HeroSection() {
           <div className="right">
             <StaticImage
               className="hero__image"
-              src="../../images/projects.jpg"
-              alt="vr guy"
+              src="../../images/nefPortfolio.jpg"
+              alt="projects"
               placeholder="blurred"
               objectPosition="50% 30%"
             />

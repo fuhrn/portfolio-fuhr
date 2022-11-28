@@ -59,6 +59,16 @@ export default {
       name: 'body',
       type: 'richText',
     },
+    {
+      title: 'Github',
+      name: 'github',
+      type: 'url',
+    },
+    {
+      title: 'Deployed',
+      name: 'deployed',
+      type: 'url',
+    },
   ],
   preview: {
     select: {
