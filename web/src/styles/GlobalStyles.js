@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-
+// --black-1: #0D121F;
+// --black-2: #121826;
 const GlobalStyles = createGlobalStyle`
   *{
     margin: 0;
@@ -11,8 +12,8 @@ const GlobalStyles = createGlobalStyle`
     --secondary: #753AFF;
     --darkBlue: #070747; 
     --darkPurple: #0E0034;
-    --black-1: #0D121F;
-    --black-2: #121826;
+    --black-1: ##515052;
+    --black-2: #5d5a63;
     --white-1: #C6BED9;
     --gray: #64718A;
     --grey: var(--gray);
