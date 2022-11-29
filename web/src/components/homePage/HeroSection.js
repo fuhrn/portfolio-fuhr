@@ -25,7 +25,7 @@ function HeroSection() {
           <div className="right">
             <StaticImage
               className="hero__image"
-              src="../../images/nes_portada_aj.jpeg"
+              src="../../images/nes_portada_aj.jpg"
               alt="projects"
               placeholder="blurred"
               objectPosition="50% 30%"
