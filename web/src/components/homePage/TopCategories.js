@@ -25,10 +25,9 @@ function TopCategories() {
   const categories = data.allSanityFeatured.nodes[0].category;
   return (
     <TopCategoriesStyles>
-      <SectionTitle>Top Categories</SectionTitle>
+      <SectionTitle>Lenguajes de programación</SectionTitle>
       <ParagraphText className="info">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae veniam
-        fuga minima.
+        Las librerías que mas uso.
       </ParagraphText>
       <CategoryGrid categories={categories} />
     </TopCategoriesStyles>

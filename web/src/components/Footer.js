@@ -12,10 +12,7 @@ function Footer() {
       <div className="container">
         <Logo />
         <ParagraphText className="footer__text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat neque
-          commodi perspiciatis quibusdam delectus voluptas ab eos natus laborum!
-          Veritatis, facilis modi. Ex, adipisci. Ab, atque. Debitis officia qui
-          vero!
+          Hola, no soy muy activo en las redes sociales, pero me pueden contactar también por aquí.
         </ParagraphText>
         <ul className="footer__menuList">
           {menu.map((item) => (
@@ -32,8 +29,7 @@ function Footer() {
           ))}
         </ul>
         <ParagraphText className="copyright">
-          © TechHub-Blog Creative {new Date().getFullYear()}. All rights
-          reserved
+          © Néstor Santiago Fuhr {new Date().getFullYear()}. All rights reserved
         </ParagraphText>
       </div>
     </FooterStyles>

@@ -19,7 +19,8 @@ export const HeroSectionStyles = styled.div`
       left: 0;
       width: 50%;
       height: 100%;
-      background: linear-gradient(135deg, #030213, #08011c);
+      // background: linear-gradient(135deg, #030213, #08011c);
+      background: linear-gradient(#365314, #292524, #292524);
       z-index: -1;
     }
     .left {
@@ -28,8 +29,8 @@ export const HeroSectionStyles = styled.div`
       .hero__heading {
         max-width: 450px;
         font-size: 4rem;
-        font-family: 'Poppins', sans-serif;
-        font-weight: '700';
+        font-family: "Poppins", sans-serif;
+        font-weight: "700";
         margin: 0.2rem 0;
       }
       .hero__text {

@@ -15,7 +15,7 @@ export const ButtonStyles = styled(Link)`
       ? 'linear-gradient(135deg, var(--secondary), var(--primary))'
       : variant === buttonTypes.secondary
       ? 'var(--white-1)'
-      : 'transparent'};
+      : 'var(--primary)'};
   border: ${({ variant }) =>
     variant === buttonTypes.outline ? '2px solid var(--primary)' : 'none'};
   color: ${({ variant }) =>

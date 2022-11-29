@@ -37,11 +37,9 @@ function FeaturedBlogs() {
   const featuredBlogs = data.allSanityFeatured.nodes[0].blogs;
   return (
     <FeaturedBlogsStyles>
-      <SectionTitle>Featured Blogs</SectionTitle>
+      <SectionTitle>Mis proyectos destacados</SectionTitle>
       <ParagraphText className="featuredBlogs__text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, nemo
-        ad provident consectetur quis eaque doloribus et, ducimus earum iste est
-        corporis
+        Descubriendo nuevas tecnologías.
       </ParagraphText>
       <BlogGrid blogs={featuredBlogs} />
     </FeaturedBlogsStyles>
