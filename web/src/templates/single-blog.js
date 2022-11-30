@@ -59,7 +59,7 @@ function SingleBlog({ data }) {
             <Title className="title">{blog.title}</Title>
             <ParagraphText className="publishedAt">
               <FiCalendar />
-              {format(new Date(blog.publishedAt), "p, MMMM dd, yyyy")}
+              {format(new Date(blog.publishedAt), 'p, MMMM dd, yyyy')}
             </ParagraphText>
             <ParagraphText className="categoriesText">
               <BiCategory />
@@ -69,7 +69,7 @@ function SingleBlog({ data }) {
                     <Link to={`/categories/${item.slug.current}`}>
                       {item.title}
                     </Link>
-                    {index < blog.categories.length - 1 ? ", " : ""}
+                    {index < blog.categories.length - 1 ? ', ' : ''}
                   </span>
                 ))}
               </span>
