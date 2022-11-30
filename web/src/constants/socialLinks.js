@@ -4,14 +4,14 @@ import {
   FaInstagram,
   FaTwitter,
   FaYoutube,
-  FiLinkedin,
+  FaLinkedin,
 } from 'react-icons/fa';
 
 export const socialLinks = [
   {
     name: 'linkedin',
     url: 'https://www.linkedin.com/in/nestorsantiagofuhr/',
-    icon: <FiLinkedin />,
+    icon: <FaLinkedin />,
   },
   {
     name: 'github',

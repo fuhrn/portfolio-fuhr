@@ -4,15 +4,15 @@ export const menu = [
     path: '/',
   },
   {
-    title: 'Blogs',
+    title: 'Proyectos',
     path: '/blogs',
   },
   {
-    title: 'Categories',
+    title: 'Librerías',
     path: '/categories',
   },
   {
-    title: 'Authors',
+    title: 'Acerca de',
     path: '/authors',
   },
 ];
