@@ -47,8 +47,8 @@ function Blogs({ data, pageContext }) {
       <PageSpace top={80} bottom={100}>
         <div className="container">
           <PageHeader
-            title="All Blog Posts"
-            description="This month will bring about the 88th Academy Awards. Starting in 1928, this prestigious award ceremony..."
+            title="Todos Mis Proyectos"
+            description="Aqui les presento los proyectos en los que estuve trabajando últimamente, con links al repositorio Github y a la aplicación deployada."
           />
           <BlogGrid blogs={blogs} />
           {numberOfPages > 1 && (

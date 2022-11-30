@@ -3,7 +3,7 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 import React from 'react';
 import { format } from 'date-fns';
 import { BiCategory } from 'react-icons/bi';
-import { FiCalendar, FiUser } from 'react-icons/fi';
+import { FiCalendar, FiUser, FiGithub, FiHome } from 'react-icons/fi';
 import PageSpace from '../components/PageSpace';
 import ParagraphText from '../components/typography/ParagraphText';
 import { Title } from '../components/typography/Title';
@@ -35,11 +35,14 @@ export const postQuery = graphql`
           current
         }
       }
+      github
+      deployed
     }
   }
 `;
 
 function SingleBlog({ data }) {
+  console.log(data);
   const blog = data.sanityBlog;
   return (
     <SingleBlogStyles>
@@ -77,10 +80,12 @@ function SingleBlog({ data }) {
               </Link>
             </ParagraphText>
             <ParagraphText className="author">
-              <FiUser />
-              <Link to={`/authors/${blog.author.slug.current}`}>
-                {blog.author.name}
-              </Link>
+              <FiGithub />
+              <Link to={`${blog.github}`}>{blog.github}</Link>
+            </ParagraphText>
+            <ParagraphText className="author">
+              <FiHome />
+              <Link to={`${blog.deployed}`}>{blog.deployed}</Link>
             </ParagraphText>
           </div>
           <hr className="hr" />

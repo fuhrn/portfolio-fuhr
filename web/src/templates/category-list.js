@@ -35,8 +35,8 @@ function Categories({ data, pageContext }) {
       <PageSpace top={80} bottom={100}>
         <div className="container">
           <PageHeader
-            title="All Categories"
-            description="This month will bring about the 88th Academy Awards. Starting in 1928, this prestigious award ceremony..."
+            title="Librerías de Software"
+            description="Estos son los lenguajes de programación y librerías que mas uso en mis proyectos."
           />
           <CategoryGrid categories={categories} />
           {numberOfPages > 1 && (
