@@ -51,7 +51,7 @@ export default {
     {
       title: 'Excerpt',
       name: 'excerpt',
-      type: 'normalText',
+      type: 'string',
       description: 'A short description of the blog post',
     },
     {

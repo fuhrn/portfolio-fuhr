@@ -17,6 +17,7 @@ export const postQuery = graphql`
       title
       publishedAt
       _rawBody
+      excerpt
       coverImage {
         asset {
           gatsbyImageData
@@ -42,8 +43,8 @@ export const postQuery = graphql`
 `;
 
 function SingleBlog({ data }) {
-  console.log(data);
   const blog = data.sanityBlog;
+  // console.log('sanityBlog: ', blog.excerpt);
   return (
     <SingleBlogStyles>
       <SEO title={blog.title} />
@@ -81,12 +82,15 @@ function SingleBlog({ data }) {
             </ParagraphText>
             <ParagraphText className="author">
               <FiGithub />
-              <Link to={`${blog.github}`}>{blog.github}</Link>
+              <Link to={`/${blog.github}`}>{blog.github}</Link>
             </ParagraphText>
             <ParagraphText className="author">
               <FiHome />
-              <Link to={`${blog.deployed}`}>{blog.deployed}</Link>
+              <Link to={`/${blog.deployed}`}>{blog.deployed}</Link>
             </ParagraphText>
+          </div>
+          <div className="body">
+            <ParagraphText className="author">{blog.excerpt}</ParagraphText>
           </div>
           <hr className="hr" />
           <div className="body">

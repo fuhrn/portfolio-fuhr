@@ -3,6 +3,7 @@ import { BlogGridStyles } from '../../styles/blog/BlogGridStyles';
 import BlogItem from './BlogItem';
 
 function BlogGrid({ blogs }) {
+  // console.log('blogs: ', blogs);
   return (
     <BlogGridStyles>
       {blogs &&
@@ -17,6 +18,7 @@ function BlogGrid({ blogs }) {
               altText: blog.coverImage.alt,
             }}
             publishedAt={blog.publishedAt}
+            excerpt={blog.excerpt}
           />
         ))}
     </BlogGridStyles>

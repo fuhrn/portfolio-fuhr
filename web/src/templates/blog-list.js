@@ -6,6 +6,7 @@ import PageSpace from '../components/PageSpace';
 import BlogGrid from '../components/blog/BlogGrid';
 import Pagination from '../components/Pagination';
 
+// blog-list muestra todos los proyectos al hacer click en opcion Proyectos del menu
 export const BlogsQuery = graphql`
   query blogListQuery($limit: Int!, $offset: Int!) {
     allSanityBlog(
@@ -32,6 +33,7 @@ export const BlogsQuery = graphql`
             gatsbyImageData
           }
         }
+        excerpt
       }
     }
   }
@@ -40,7 +42,7 @@ export const BlogsQuery = graphql`
 function Blogs({ data, pageContext }) {
   const { currentPage, numberOfPages } = pageContext;
   const blogs = data.allSanityBlog.nodes;
-
+  // console.log('blog-list: ', blogs);
   return (
     <>
       <SEO title="Blogs" />

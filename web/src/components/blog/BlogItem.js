@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Link } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { format } from 'date-fns';
@@ -6,7 +7,9 @@ import { BlogItemStyles } from '../../styles/blog/BlogItemStyles';
 import ParagraphText from '../typography/ParagraphText';
 import { Title } from '../typography/Title';
 
-function BlogItem({ path, title, image, categories, publishedAt }) {
+function BlogItem(blog) {
+  const { path, title, image, categories, publishedAt, excerpt } = blog
+  // console.log('BlogItem excerpt: ', excerpt);
   return (
     <BlogItemStyles>
       <Link to={`/blogs/${path}`}>
@@ -32,6 +35,9 @@ function BlogItem({ path, title, image, categories, publishedAt }) {
           </span>
         ))}
       </ParagraphText>
+          {/* debe haber alguna forma mas sencilla pero esta es la forma que funciono
+          poder imprimir el excerpt */}
+      <ParagraphText> {excerpt}</ParagraphText>
     </BlogItemStyles>
   );
 }

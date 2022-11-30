@@ -50,7 +50,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const categories = result.data.allSanityCategory.nodes;
   const authors = result.data.allSanityAuthor.nodes;
 
-  // single blogs pages
+  // single blogs pages: aqui trae excerpt sin problemas
   blogs.forEach((blog) => {
     createPage({
       path: `/blogs/${blog.slug.current}`,
