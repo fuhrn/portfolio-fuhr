@@ -42,8 +42,9 @@ export const HeroSectionStyles = styled.div`
     }
     .right {
       position: absolute;
+      background: linear-gradient(#365314, #292524, #292524);
       right: 0;
-      top: 0;
+      top: 7%;
       width: 50%;
       height: 100%;
       .hero__image {
